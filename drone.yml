@@ -5,6 +5,7 @@ steps:
 - name: nodeapp
   image: node
   commands:
+  - docker port nodeapp 8081/8080
   - npm install
   - yarn build
   - yarn serve
