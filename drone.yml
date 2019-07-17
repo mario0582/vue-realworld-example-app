@@ -1,0 +1,10 @@
+kind: pipeline
+name: default
+
+steps:
+- name: nodeapp
+  image: node
+  commands:
+  - npm install
+  - yarn build
+  - yarn serve
