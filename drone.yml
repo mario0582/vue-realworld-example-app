@@ -9,7 +9,7 @@ steps:
   - yarn run build
   volumes:
   - name: app
-    path: /home/node/app
+    path: /
   
   volumes:
   - name: app
