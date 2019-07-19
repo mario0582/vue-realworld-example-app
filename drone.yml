@@ -4,9 +4,6 @@ name: default
 steps:
 - name: nodeapp
   image: node
-  volumes:
-  - name: cache
-    path: /tmp/cache
   commands:
   - npm install
   - yarn run build
@@ -14,4 +11,4 @@ steps:
   volumes:
 - name: cache
   host:
-    path: /var/lib/cache
+    path: /tmp/cache:/var/lib/cache
