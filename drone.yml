@@ -8,5 +8,4 @@ steps:
   - npm install
   - yarn run build
   volumes:
-  - name: app
-    path: /home/node/app:/var/www/vhosts/drone.battlecloud.space/vueapp
+  - /home/node/app:/var/www/vhosts/drone.battlecloud.space/vueapp
