@@ -7,8 +7,11 @@ steps:
   commands:
   - npm install
   - yarn run build
-  
   volumes:
-- name: cache
+  - name: cache
+    path: /tmp/cache
+    
+  volumes:
+- name: node
   host:
     path: /tmp/cache:/var/lib/cache
