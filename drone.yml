@@ -4,14 +4,14 @@ name: default
 steps:
 - name: nodeapp
   image: node
-    volumes:
-  - name: app
+  volumes:
+  - name: cache
     path: /home/node/app
   commands:
   - npm install
   - yarn run build
   
   volumes:
-- name: app
+- name: cache
   host:
     path: /var/www/vhosts/drone.battlecloud.space/vueapp
