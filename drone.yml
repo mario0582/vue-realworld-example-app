@@ -10,8 +10,3 @@ steps:
   volumes:
   - name: cache
     path: /tmp/cache
-    
-  volumes:
-- name: node
-  host:
-    path: /tmp/cache:/var/lib/cache
