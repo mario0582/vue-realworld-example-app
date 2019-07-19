@@ -3,7 +3,7 @@ name: default
 
 steps:
 - name: nodeapp
-  image: node
+  image: node:latest
   volumes:
   - name: cache
     path: /
