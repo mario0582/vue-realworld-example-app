@@ -6,7 +6,7 @@ steps:
   image: node
   volumes:
   - name: cache
-    path: /home/node/app
+    path: /
   commands:
   - npm install
   - yarn run build
