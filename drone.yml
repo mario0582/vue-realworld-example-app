@@ -14,4 +14,4 @@ steps:
   volumes:
   - name: app
     host:
-   path: /var/www/vhosts/drone.battlecloud.space/vueapp
+      path: /var/www/vhosts/drone.battlecloud.space/vueapp
